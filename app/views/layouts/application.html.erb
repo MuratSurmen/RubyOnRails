@@ -7,34 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <heaeder class="navbar navbar-fixed-top navbar-default">
-    <div class="container">
-      <%= link_to "myrecipes", "", class: "btn btn-lg btn-success", id: "logo" %>
-      
-      <div class="nav_item">
-        
-        <%= link_to "link1", "",class: "btn btn-default btn-warning" %>
-      </div>
-       <div class="nav_item">
-        
-        <%= link_to "link1", "",class: "btn btn-default btn-warning" %>
-      </div>
-       <div class="nav_item">
-        
-        <%= link_to "link1", "",class: "btn btn-default btn-warning" %>
-      </div>
-    </div>
+ 
+    <%= render 'layouts/navigation' %>
     
-  </heaeder>
-  <div class="container">
+  
 
-
+<div class="container">
   <%= yield %>
-  <div class="footer">
-    <p>&copy; Dignity 2015 </p>
-    
-  </div>
-
+  
+ <%= render 'layouts/footer' %>
 
   </div>
 </body>
